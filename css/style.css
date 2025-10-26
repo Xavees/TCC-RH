@@ -1,0 +1,96 @@
+ body {
+    background-color: #f0f8ff;
+
+        
+}
+h1 {
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+    color: #2E7D32;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 60px;
+}
+#navigation {
+    display: none; 
+}
+#navigation.mostrar {
+    display: block; 
+}
+#menuToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+#navigation {
+    position: fixed;
+    top: 50px; 
+    right: 10px;
+    width: 150px; 
+}
+#menuToggle {
+    background: rgb(0, 70, 0);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#menuToggle:hover {
+    background: #34495e;
+    transform: scale(1.05);
+}
+
+/* Navegação */
+#navigation {
+    display: none;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#navigation.mostrar {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Lista de redirecionamento no site*/
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    margin: 10px 0;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 18px;
+    padding: 8px 0;
+    display: block;
+    transition: 0.2s;
+}
+
+#navigation a:hover {
+    color: greenyellow;
+    transform: translateX(5px);
+}
+
+/* Animação de abertura */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/*Arrumando o logo */
+
